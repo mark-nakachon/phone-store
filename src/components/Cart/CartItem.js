@@ -23,7 +23,7 @@ export default function CartItem({ item, value }) {
 						<span
 							className="btn btn-black mx-1"
 							onClick={() => {
-								decrement();
+								decrement(id);
 							}}
 						>
 							-
@@ -32,7 +32,7 @@ export default function CartItem({ item, value }) {
 						<span
 							className="btn btn-black mx-1"
 							onClick={() => {
-								increment();
+								increment(id);
 							}}
 						>
 							+

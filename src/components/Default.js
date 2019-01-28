@@ -2,9 +2,20 @@ import React, { Component } from 'react';
 
 export default class Default extends Component {
 	render() {
+		console.log(this.props);
 		return (
-			<div>
-				<h3>Page Not Found</h3>
+			<div className="container">
+				<div className="row">
+					<div className="col-10 mx-auto text-center text-title text-uppercase py-5">
+						<h1 className="display-3">404</h1>
+						<h1>error</h1>
+						<h2>page not found</h2>
+						<h3>
+							the requested url was not found
+							<span className="text-danger">{this.props.location.pathname}</span>
+						</h3>
+					</div>
+				</div>
 			</div>
 		);
 	}
