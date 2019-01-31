@@ -8,6 +8,7 @@ import CartList from './CartList';
 import CartTotals from './CartTotals';
 class Cart extends Component {
 	render() {
+		console.log(this.props.history);
 		return (
 			<section>
 				<ProductConsumer>

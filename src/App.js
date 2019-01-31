@@ -7,6 +7,7 @@ import Details from './components/Details';
 import Default from './components/Default';
 import Cart from './components/Cart';
 import Modal from './components/Modal';
+import Payments from './components/Payments';
 import { Switch, Route, Link } from 'react-router-dom';
 
 class App extends Component {
@@ -18,6 +19,7 @@ class App extends Component {
 					<Route exact path="/" component={ProductList} />
 					<Route exact path="/details" component={Details} />
 					<Route exact path="/cart" component={Cart} />
+					<Route exact path="/payment/success" component={Payments} />
 					<Route component={Default} />
 				</Switch>
 				<Modal />
